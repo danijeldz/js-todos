@@ -21,3 +21,11 @@ addForm.addEventListener("submit", (e) => {
     warning.textContent = "You need to enter some text to add new todo"
   }
 })
+
+// delete todo
+
+list.addEventListener("click", (e) => {
+  if (e.target.classList.contains("delete")) {
+    e.target.parentElement.remove()
+  }
+})
